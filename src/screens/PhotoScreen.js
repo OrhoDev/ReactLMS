@@ -60,11 +60,13 @@ const styles=StyleSheet.create({
     fontWeight: "bold"
    },
    card:{
-    backgroundColor: "Orange",
+    backgroundColor: "#e85d54",
     borderRadius: 8,
     width: "90%",
     padding: 10,
-    marginVertical: 10
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: "white"
    }
 
    }
