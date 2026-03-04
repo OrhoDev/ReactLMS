@@ -20,11 +20,11 @@ class PhotoScreen extends React.Component{
          keyExtractor={photos=>photos.id}
          data={photos}
          renderItem={({item})=>(
-           <View>
-             <Text>{item.id}</Text>
-             <Text>{item.albumId}</Text>
+           <View style = {styles.card}>
+             <Text style = {styles.id}>{item.id}</Text>
+             <Text style = {styles.albumId}>{item.albumId}</Text>
              <Image source = {item.url} style = {styles.img}></Image>
-             <Text>{item.title}</Text>
+             <Text style = {styles.title}>{item.title}</Text>
          
 
            </View>
@@ -58,7 +58,15 @@ const styles=StyleSheet.create({
     fontsize: 20,
     color: "black",
     fontWeight: "bold"
+   },
+   card:{
+    backgroundColor: "Orange",
+    borderRadius: 8,
+    width: "90%",
+    padding: 10,
+    marginVertical: 10
    }
+
    }
 
 );
