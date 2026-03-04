@@ -23,7 +23,7 @@ class PhotoScreen extends React.Component{
            <View>
              <Text>{item.id}</Text>
              <Text>{item.albumId}</Text>
-            <Image source = {item.url} style = {styles.img}></Image>
+             <Image source = {item.url} style = {styles.img}></Image>
              <Text>{item.title}</Text>
          
 
@@ -37,11 +37,30 @@ class PhotoScreen extends React.Component{
 
 const styles=StyleSheet.create({
    img:
-   {width:100,
+   {
+    width:100,
     height:100,
-    borderTopLeftRadius:8,
-    borderBottomLeftRadius:8
+    borderRadius: 8
    },
-});
+   id:
+   {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: "black"
+   },
+   albumId:{
+    fontsize: 14,
+    color:"gray",
+    fontWeight: "italic"
+   },
+   title:
+   {
+    fontsize: 20,
+    color: "black",
+    fontWeight: "bold"
+   }
+   }
+
+);
 
 export default PostsScreen
