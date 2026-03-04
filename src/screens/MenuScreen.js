@@ -4,7 +4,7 @@ import {View,Text,StyleSheet,Button,TouchableOpacity}from"react-native";
 const MenuScreen=(props)=>{console.log(props.navigation);
  return(
    <View>
-     <Text style={styles.text}>menu??</Text>
+     <Text style={styles.text}>Menu</Text>
      <Button title="-> list" onPress={()=>props.navigation.navigate("List")}/>
      <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Students")}>    
        <Text style={styles.btnText}>students</Text>

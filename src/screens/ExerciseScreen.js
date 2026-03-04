@@ -2,12 +2,12 @@ import React from "react";
 import {Text,StyleSheet,View}from"react-native";
 
 const ExerciseScreen=(props)=>{
-  var message="Hi there"
-  message="yo from digital school!!"
+  var message="Welcome"
+  message="Welcome to Digital School"
 
   return(
     <View>
-        <Text style={styles.message1Style}>yo there</Text>
+        <Text style={styles.message1Style}>Welcome</Text>
         <Text>{props.message}</Text>
     </View>
   )

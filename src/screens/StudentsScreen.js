@@ -4,7 +4,7 @@ import StudentDetails from "../components/StudentDetails";
 
 const StudentsScreen=()=> (
  <View>
-   <Text style={styles.text}>stu screen</Text>
+   <Text style={styles.text}>Students</Text>
    <StudentDetails name="Ellie" image={require("../../assets/Avatar-1.jpeg")} desc={"Lorem ipms dolor ist amaten"}/>
    <StudentDetails name="Gabriel" image={require("../../assets/Avatar-2.png")} desc={"Lorem ipms dolor ist amaten"}/>
    <StudentDetails name="Kaylen" image={require("../../assets/Avatar-3.png")} desc={"Lorem ipms dolor ist amaten"}/>

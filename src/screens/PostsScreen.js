@@ -15,7 +15,7 @@ class PostsScreen extends React.Component{
    const{posts}=this.state;
    return(
      <View>
-       <Text>postz</Text>
+       <Text>Posts</Text>
        <FlatList
          keyExtractor={posts=>posts.id}
          data={posts}

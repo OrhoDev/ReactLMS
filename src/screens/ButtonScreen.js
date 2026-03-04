@@ -5,7 +5,7 @@ const ButtonScreen=()=>{
  let counter=0
  return(
    <View>
-    <Text style={styles.textStyle}>bttn screen hehe</Text>
+    <Text style={styles.textStyle}>Buttons</Text>
     <Button title="click!" color="purple"
         onPress={()=>console.log("clicked:",counter++)}
      />

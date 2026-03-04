@@ -11,7 +11,7 @@ const students=[
 const ListScreen=(props)=>{
  return(
    <View>
-     <Text>list kind of</Text>
+     <Text>Students List</Text>
      <FlatList
         keyExtractor={students=>students.name}
         data={students}
@@ -23,7 +23,7 @@ const ListScreen=(props)=>{
      />
      <TouchableOpacity style={styles.touchableButton}
          onPress={()=>props.navigation.goBack()}>
-        <Text style={styles.buttonText}>go back pls</Text>
+        <Text style={styles.buttonText}>Go Back</Text>
      </TouchableOpacity>
    </View>
  )
