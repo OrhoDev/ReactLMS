@@ -8,6 +8,8 @@ import MenuScreen from "./src/screens/MenuScreen";
 import StudentsScreen from "./src/screens/StudentsScreen";
 import BoxScreen from "./src/screens/BoxScreen";
 import PostsScreen from "./src/screens/PostsScreen";
+import CountriesScreen from "./src/screens/CountriesScreen";
+import ProductScreen from "./src/screens/ProductScreen";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ export default function App() {
         <Stack.Screen name="Students" component={StudentsScreen} />
         <Stack.Screen name="Box" component={BoxScreen} />
         <Stack.Screen name="Posts" component={PostsScreen} />
+        <Stack.Screen name="Countries" component={CountriesScreen} />
+        <Stack.Screen name="Product" component={ProductScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -39,3 +43,4 @@ export default function App() {
 // H
 // Create a FactsScreen component that displays three facts.
 // Use a combination of let and const variables and different styles for each fact.
+

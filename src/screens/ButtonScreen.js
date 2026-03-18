@@ -1,38 +1,49 @@
 import React from "react";
-import {View, Text, StyleSheet, Button, TouchableOpacity} from "react-native";
+import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
-const ButtonScreen=()=>{
- let counter=0
- return(
-   <View>
-    <Text style={styles.textStyle}>Buttons</Text>
-    <Button title="click!" color="purple"
-        onPress={()=>console.log("clicked:",counter++)}
-     />
+const ButtonScreen = () => {
+  let counter = 0;
+  return (
+    <View>
+      <Text style={styles.textStyle}>Button Demo</Text>
+      <Button
+        title="Click Me!"
+        color="purple"
+        onPress={() =>
+          console.log("Button Clicked this many times: ", counter++)
+        }
+      />
 
-     <TouchableOpacity style={styles.touchableButton}
-        onPress={()=>console.log("touchy")}
-     >
-        <Text style={styles.btnText}>click this text</Text>
-     </TouchableOpacity>
-   </View>
- )
-}
+      <TouchableOpacity
+        style={styles.touchableButton}
+        onPress={() => console.log("TouchableOpacity Clicked")}
+      >
+        <Text style={styles.btnText}>Touch This Text!</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
-const styles=StyleSheet.create({
- textStyle:{
-    textAlign:"center",
-    marginTop:10,
-    fontSize:15, marginBottom:10
- },
- touchableButton:{
-    backgroundColor:"purple",
-    marginVertical:15,paddingVertical:20,
-    borderRadius:6,marginHorizontal:20
- },
- btnText:{
-    color:"white",textAlign:"center",fontSize:25,fontWeight:"bold"
- }
-})
+const styles = StyleSheet.create({
+  textStyle: {
+    textAlign: "center",
+    marginTop: 10,
+    fontSize: 15,
+    marginBottom: 10,
+  },
+  touchableButton: {
+    backgroundColor: "purple",
+    marginVertical: 15,
+    paddingVertical: 20,
+    borderRadius: 6,
+    marginHorizontal: 20,
+  },
+  btnText: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 25,
+    fontWeight: "bold",
+  },
+});
 
-export default ButtonScreen
+export default ButtonScreen;
